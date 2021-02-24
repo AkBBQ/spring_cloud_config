@@ -1,3 +1,12 @@
 spring:
   application:
-    name: config
+    name: config-server
+
+eureka:
+  client:
+    serviceUrl:
+      #      eureka的注册中心地址
+      defaultZone: http://localhost:8888/eureka/
+server:
+  #  此项目端口号
+  port: 9090
